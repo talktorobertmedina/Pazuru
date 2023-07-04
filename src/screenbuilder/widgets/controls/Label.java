@@ -1,5 +1,8 @@
 package screenbuilder.widgets.controls;
 
-public class Label {
+/**
+ * Read only text component.
+ */
+public class Label extends Labeled {
 
 }

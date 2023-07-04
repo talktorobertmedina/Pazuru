@@ -1,5 +1,8 @@
 package screenbuilder.widgets.controls;
 
-public class DigitalReadout {
+/**
+ * Digital readout class. Used to report digital sensor data.
+ */
+public class DigitalReadout extends Labeled {
 
 }

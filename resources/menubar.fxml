@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<VBox>
+	<MenuBar>
+		<menus>
+			<Menu text="File">
+				<MenuItem text="New" accelerator="Shortcut+N"/>
+				<MenuItem text="Open" accelerator="Shortcut+O"/>
+				<MenuItem text="Save" accelerator="Shortcut+S"/>
+				<MenuItem text="Save As" accelerator="Shortcut+shift+S"/>
+				<MenuItem text="Exit"/>
+			</Menu>
+		</menus>
+	</MenuBar>
+</VBox>
