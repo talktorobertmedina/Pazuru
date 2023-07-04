@@ -12,6 +12,10 @@ public class AppAction {
 	}
 	
 	public enum MenuBarAction {
-		
+		NEW_FILE,
+		OPEN_FILE,
+		SAVE_FILE,
+		SAVE_AS_FILE,
+		EXIT_APPLICATION
 	}
 }
