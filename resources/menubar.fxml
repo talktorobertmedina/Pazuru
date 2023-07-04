@@ -10,9 +10,9 @@
 		<menus>
 			<Menu text="File">
 				<MenuItem text="New" accelerator="Shortcut+N"/>
-				<MenuItem text="Open" accelerator="Shortcut+O"/>
+				<MenuItem text="Open" onAction="#handleOpenFile" accelerator="Shortcut+O"/>
 				<MenuItem text="Save" accelerator="Shortcut+S"/>
-				<MenuItem text="Save As" accelerator="Shortcut+shift+S"/>
+				<MenuItem text="Save As" onAction="#handleSaveAsFile" accelerator="Shortcut+shift+S"/>
 				<MenuItem text="Exit"/>
 			</Menu>
 		</menus>
