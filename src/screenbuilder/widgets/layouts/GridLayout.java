@@ -1,5 +1,5 @@
 package screenbuilder.widgets.layouts;
 
-public class GridLayout {
+public class GridLayout extends Layout {
 
 }

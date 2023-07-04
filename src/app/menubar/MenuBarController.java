@@ -32,4 +32,9 @@ public class MenuBarController extends BaseController {
 	private MenuItem fileMenuSaveAsItem;
 	@FXML
 	private MenuItem fileMenuExitItem;
+	
+	@FXML
+	private void initialize() {
+		
+	}
 }

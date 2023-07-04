@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+
+<Accordion>
+	<panes>
+		<TitledPane text="Containers">
+			<content>
+				<ListView fx:id="containersList" />
+			</content>
+		</TitledPane>
+		<TitledPane text="Controls">
+			<content>
+				<ListView fx:id="controlsList" />
+			</content>
+		</TitledPane>
+		<TitledPane text="Shapes">
+			<content>
+				<ListView fx:id="shapesList" />
+			</content>
+		</TitledPane>
+	</panes>
+</Accordion>

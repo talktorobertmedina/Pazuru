@@ -15,6 +15,12 @@
 				<MenuItem text="Save As" accelerator="Shortcut+shift+S"/>
 				<MenuItem text="Exit"/>
 			</Menu>
+			<Menu text="Device">
+				<MenuItem text="Connect"/>
+				<MenuItem text="Disconnect"/>
+				<MenuItem text="Upload"/>
+				<MenuItem text="Download"/>
+			</Menu>
 		</menus>
 	</MenuBar>
 </VBox>

@@ -8,5 +8,5 @@ import java.util.List;
  */
 public class TaskManager {
 
-	private final List<Task> jobHistory = new LinkedList<>();
+	private final List<Taskable> jobHistory = new LinkedList<>();
 }
