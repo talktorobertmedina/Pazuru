@@ -13,13 +13,61 @@
 				<MenuItem text="Open" onAction="#handleOpenFile" accelerator="Shortcut+O"/>
 				<MenuItem text="Save" accelerator="Shortcut+S"/>
 				<MenuItem text="Save As" onAction="#handleSaveAsFile" accelerator="Shortcut+shift+S"/>
+				<MenuItem text="Preferences"/>
 				<MenuItem text="Exit"/>
 			</Menu>
+			<Menu text="Edit">
+				<MenuItem text="Undo"/>
+				<MenuItem text="Redo"/>
+			</Menu>
+			<Menu text="Insert">
+				<MenuItem text="all components inserted here"/>
+			</Menu>
+			<Menu text="Format">
+				<Menu text="Alignment">
+					<MenuItem text="Align Left"/>
+					<MenuItem text="Align Vertical Center"/>
+					<MenuItem text="Align Right"/>
+					<MenuItem text="Align Top"/>
+					<MenuItem text="Align Bottom"/>
+					<MenuItem text="Align Horizontal Center"/>
+				</Menu>
+				<MenuItem text="Space Vertical Evenly"/>
+				<MenuItem text="Space Horizontal Evenly"/>
+				<MenuItem text="Send to Front"/>
+				<MenuItem text="Send to Back"/>
+				<MenuItem text="Bring All To Front"/>
+				<MenuItem text="Size Vertically Equally"/>
+				<MenuItem text="Size Horizontal Equally"/>
+				<MenuItem text="Size Equally"/>
+			</Menu>
+			<Menu text="View">
+				<MenuItem text="Show Grid Lines"/>
+				<MenuItem text="Toggle Snap"/>
+				<MenuItem text="Zoom In"/>
+				<MenuItem text="Zoom Out"/>
+				<MenuItem text="Reset Default Zoom"/>
+				<MenuItem text="Fit To Window"/>
+			</Menu>
+			<Menu text="Window">
+				<MenuItem text="Show Variable Database"/>
+				<MenuItem text="Show Tag Database"/>
+				<MenuItem text="Show Alarm Database"/>
+				<MenuItem text="Show Script Editor"/>
+				<MenuItem text="Show Property Editor"/>
+			</Menu>
+			<Menu text="Simulation">
+				<MenuItem text="Toggle Data Input Simulation"/>
+			</Menu>
 			<Menu text="Device">
-				<MenuItem text="Connect"/>
-				<MenuItem text="Disconnect"/>
-				<MenuItem text="Upload"/>
-				<MenuItem text="Download"/>
+				<MenuItem text="Connect to Device"/>
+				<MenuItem text="Disconnect Device"/>
+				<MenuItem text="Upload Screen to Device"/>
+				<MenuItem text="Download Screen From Device"/>
+			</Menu>
+			<Menu text="Help">
+				<MenuItem text="Check for Updates"/>
+				<MenuItem text="About"/>
 			</Menu>
 		</menus>
 	</MenuBar>

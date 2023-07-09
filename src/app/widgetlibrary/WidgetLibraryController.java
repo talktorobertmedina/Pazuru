@@ -48,10 +48,14 @@ public class WidgetLibraryController extends BaseController {
 
 	@FXML
 	public void initialize() {
-		// TODO: add custom cell factory to display proper name of component
 		// TODO: add drag and drop feature inside each cell
+		containersListView.setCellFactory(new WidgetCellFactory());
 		containersListView.setItems(containersList);
+
 		controlsListView.setItems(controlsList);
+		controlsListView.setCellFactory(new WidgetCellFactory());
+
 		shapesListView.setItems(shapesList);
+		shapesListView.setCellFactory(new WidgetCellFactory());
 	}
 }
