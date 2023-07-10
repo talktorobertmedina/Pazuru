@@ -2,17 +2,30 @@ package app;
 
 import java.net.URL;
 
+import app.layout.Panel;
+import app.layout.Tab;
 import app.menubar.MenuBarController;
+import app.toolbar.ToolBarController;
 import app.widgetlibrary.WidgetLibraryController;
 import javafx.fxml.FXML;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 
 public class AppController extends BaseController {
 
 	@FXML
 	private BorderPane sp;
+	@FXML
+	private Panel leftPanel;
+	@FXML
+	private Panel centerPanel;
+	@FXML
+	private Panel rightPanel;
+	@FXML
+	private Panel bottomPanel;
 
 	private MenuBarController mbc = new MenuBarController();
+	private ToolBarController tbc = new ToolBarController();
 	private WidgetLibraryController wlc = new WidgetLibraryController();
 
 	public AppController() {
@@ -25,7 +38,24 @@ public class AppController extends BaseController {
 
 	@FXML
 	private void initialize() {
-		sp.setTop(mbc.getMyRoot());
-		sp.setLeft(wlc.getMyRoot());
+		VBox topbar = initializeTopBar();
+		initializeLeftPanel();
+		
+		sp.setTop(topbar); // menubar, toolbar
+		sp.setLeft(leftPanel); // widgetlibrary
+		sp.setCenter(centerPanel); // screenbuilder
+		sp.setRight(rightPanel); // property inspector
+		sp.setBottom(bottomPanel); // logger, notification bar
+		
+		// TODO: add panels to each direction of borderpane
+//		sp.setLeft(wlc.getMyRoot());
+	}
+	
+	private VBox initializeTopBar() {
+		return new VBox(mbc.getMyRoot(), tbc.getMyRoot());
+	}
+	
+	private void initializeLeftPanel() {
+		leftPanel.addTab((Tab) wlc.getMyRoot());
 	}
 }

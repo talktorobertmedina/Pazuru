@@ -1,6 +1,37 @@
 package app.layout;
 
-public class Panel {
-	// contains multiple windows and separate via tabs
+import java.util.Collection;
+import java.util.List;
+
+import javafx.scene.layout.Pane;
+
+public class Panel extends Pane {
+	// contains multiple tabs
 	// should have events and listeners
+	private List<Tab> tabList;
+	
+	public Panel() {
+		
+	}
+	
+	public Panel(Collection<Tab> data) {
+		tabList.addAll(data);
+	}
+	
+	public void addTab(Tab tab) {
+		
+		tabList.add(tab);
+	}
+	
+	public Boolean isEmpty() {
+		return tabList.isEmpty();
+	}
+	
+	public void minimizePanel() {
+		
+	}
+	
+	public void maximizePanel() {
+		
+	}
 }

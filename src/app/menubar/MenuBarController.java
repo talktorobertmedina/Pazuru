@@ -22,6 +22,7 @@ public class MenuBarController extends BaseController {
 	public MenuBarController(URL url) {
 		super(url);
 	}
+	
 	@FXML
 	private MenuBar menuBar;
 	@FXML

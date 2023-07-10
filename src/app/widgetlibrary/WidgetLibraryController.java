@@ -4,6 +4,7 @@ import java.net.URL;
 
 import app.BaseController;
 import app.FxmlEnumList;
+import app.layout.Tab;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -19,6 +20,8 @@ import screenbuilder.widgets.shape.Rectangle;
 
 public class WidgetLibraryController extends BaseController {
 
+	@FXML
+	Tab tab;
 	@FXML
 	Accordion node;
 	@FXML
