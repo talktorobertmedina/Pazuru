@@ -45,6 +45,7 @@ public class WidgetLibraryController extends BaseController {
 	public WidgetLibraryController() {
 		this( WidgetLibraryController.class.getResource(FxmlEnumList.WIDGETLIBRARY_FXML));
 	}
+	
 	public WidgetLibraryController(URL url) {
 		super(url);
 	}
@@ -60,5 +61,9 @@ public class WidgetLibraryController extends BaseController {
 
 		shapesListView.setItems(shapesList);
 		shapesListView.setCellFactory(new WidgetCellFactory());
+	}
+	
+	public Tab getTab() {
+		return tab;
 	}
 }

@@ -39,13 +39,13 @@ public class AppController extends BaseController {
 	@FXML
 	private void initialize() {
 		VBox topbar = initializeTopBar();
-		initializeLeftPanel();
+		// initializeLeftPanel();
 		
 		sp.setTop(topbar); // menubar, toolbar
-		sp.setLeft(leftPanel); // widgetlibrary
-		sp.setCenter(centerPanel); // screenbuilder
-		sp.setRight(rightPanel); // property inspector
-		sp.setBottom(bottomPanel); // logger, notification bar
+		// sp.setLeft(leftPanel); // widgetlibrary
+//		sp.setCenter(centerPanel); // screenbuilder
+//		sp.setRight(rightPanel); // property inspector
+//		sp.setBottom(bottomPanel); // logger, notification bar
 		
 		// TODO: add panels to each direction of borderpane
 //		sp.setLeft(wlc.getMyRoot());
@@ -56,6 +56,8 @@ public class AppController extends BaseController {
 	}
 	
 	private void initializeLeftPanel() {
-		leftPanel.addTab((Tab) wlc.getMyRoot());
+		wlc.generateRoot();
+		Tab root = wlc.getTab();
+		// leftPanel.addTab(root);
 	}
 }

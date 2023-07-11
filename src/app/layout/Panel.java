@@ -3,6 +3,7 @@ package app.layout;
 import java.util.Collection;
 import java.util.List;
 
+import javafx.fxml.FXML;
 import javafx.scene.layout.Pane;
 
 public class Panel extends Pane {
@@ -16,6 +17,11 @@ public class Panel extends Pane {
 	
 	public Panel(Collection<Tab> data) {
 		tabList.addAll(data);
+	}
+	
+	@FXML
+	private void initialize() {
+		
 	}
 	
 	public void addTab(Tab tab) {
