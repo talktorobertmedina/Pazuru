@@ -9,6 +9,7 @@ import app.toolbar.ToolBarController;
 import app.widgetlibrary.WidgetLibraryController;
 import javafx.fxml.FXML;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
 public class AppController extends BaseController {
@@ -39,10 +40,10 @@ public class AppController extends BaseController {
 	@FXML
 	private void initialize() {
 		VBox topbar = initializeTopBar();
-		// initializeLeftPanel();
+//		initializeLeftPanel();
 		
-		sp.setTop(topbar); // menubar, toolbar
-		// sp.setLeft(leftPanel); // widgetlibrary
+//		sp.setTop(topbar); // menubar, toolbar
+//		sp.setLeft(leftPanel); // widgetlibrary
 //		sp.setCenter(centerPanel); // screenbuilder
 //		sp.setRight(rightPanel); // property inspector
 //		sp.setBottom(bottomPanel); // logger, notification bar
@@ -58,6 +59,6 @@ public class AppController extends BaseController {
 	private void initializeLeftPanel() {
 		wlc.generateRoot();
 		Tab root = wlc.getTab();
-		// leftPanel.addTab(root);
+		leftPanel.addTab(root);
 	}
 }

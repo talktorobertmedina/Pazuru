@@ -1,5 +1,6 @@
 package app.layout;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -12,11 +13,14 @@ public class Panel extends Pane {
 	private List<Tab> tabList;
 	
 	public Panel() {
-		
+		super();
+		tabList = new ArrayList<>();
 	}
 	
 	public Panel(Collection<Tab> data) {
-		tabList.addAll(data);
+		super();
+		tabList = new ArrayList<>();
+		getChildren().addAll(data);
 	}
 	
 	@FXML

@@ -9,6 +9,10 @@ public class Tab extends Pane {
 	
 	private TabTitle title;
 	
+	public Tab() {
+		super();
+	}
+	
 	@FXML
 	private void initialize() {
 		
