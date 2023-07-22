@@ -1,9 +1,9 @@
 module guilibrary {
-	exports widgets.layouts;
-	exports widgets.shape;
-	exports widgets.base;
-	exports widgets.controls;
-	exports widgets.container;
+	exports guilibrary.widgets.layouts;
+	exports guilibrary.widgets.shape;
+	exports guilibrary.widgets.base;
+	exports guilibrary.widgets.controls;
+	exports guilibrary.widgets.container;
 
 	requires java.xml;
 }

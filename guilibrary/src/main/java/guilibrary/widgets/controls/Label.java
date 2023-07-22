@@ -1,10 +1,13 @@
-package widgets.layouts;
+package guilibrary.widgets.controls;
 
 import org.w3c.dom.Document;
 
-import widgets.base.Component;
+import guilibrary.widgets.base.Component;
 
-public class GridLayout extends Layout {
+/**
+ * Read only text component.
+ */
+public class Label extends Labeled {
 
 	@Override
 	public Document toFxml(Component component) {

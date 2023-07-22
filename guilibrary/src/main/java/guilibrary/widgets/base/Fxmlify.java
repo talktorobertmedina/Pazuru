@@ -1,4 +1,4 @@
-package widgets.base;
+package guilibrary.widgets.base;
 
 import org.w3c.dom.Document;
 

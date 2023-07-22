@@ -1,13 +1,13 @@
-package widgets.container;
+package guilibrary.widgets.shape;
 
 import org.w3c.dom.Document;
 
-import widgets.base.Component;
+import guilibrary.widgets.base.Component;
 
 /**
- * Container that will contain a group of Components or classes that extends Component class
+ * Draw a rectangle.
  */
-public class Group extends Component {
+public class Rectangle extends Shape {
 
 	@Override
 	public Document toFxml(Component component) {

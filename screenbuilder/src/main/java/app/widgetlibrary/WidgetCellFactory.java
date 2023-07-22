@@ -3,7 +3,7 @@ package app.widgetlibrary;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.util.Callback;
-import widgets.base.Component;
+import guilibrary.widgets.base.Component;
 
 public class WidgetCellFactory implements Callback<ListView<Component>, ListCell<Component>> {
 

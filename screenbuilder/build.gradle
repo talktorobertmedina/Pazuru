@@ -9,13 +9,24 @@ dependencies {
     implementation project(':guilibrary')
 }
 
-javafx {
-	sdk = System.getenv("JAVAFX_HOME")
-    modules = [ 'javafx.controls', 'javafx.fxml' ]
+eclipse.classpath.file {
+    whenMerged {
+        entries.findAll { isModule(it) }.each { it.entryAttributes['module'] = 'true' }
+    }
+}
+
+boolean isModule(entry) {
+    // filter java 9 modules
+    entry.kind == 'lib'  // Only libraries can be modules
 }
 
 java {
     modularity.inferModulePath.set(true)
+}
+
+javafx {
+	sdk = System.getenv("JAVAFX_HOME")
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 application {

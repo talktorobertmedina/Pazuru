@@ -1,13 +1,13 @@
-package widgets.controls;
+package guilibrary.widgets.controls;
 
 import org.w3c.dom.Document;
 
-import widgets.base.Component;
+import guilibrary.widgets.base.Component;
 
 /**
- * Read only text component.
+ * Analog label class. It reports data from an analog signal.
  */
-public class Label extends Labeled {
+public class AnalogReadout extends Labeled {
 
 	@Override
 	public Document toFxml(Component component) {

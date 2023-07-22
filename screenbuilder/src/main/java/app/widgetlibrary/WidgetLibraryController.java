@@ -11,12 +11,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Accordion;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TitledPane;
-import screenbuilder.widgets.base.Component;
-import screenbuilder.widgets.container.Group;
-import screenbuilder.widgets.controls.AnalogReadout;
-import screenbuilder.widgets.controls.DigitalReadout;
-import screenbuilder.widgets.controls.Label;
-import screenbuilder.widgets.shape.Rectangle;
+import guilibrary.widgets.base.Component;
+import guilibrary.widgets.container.Group;
+import guilibrary.widgets.controls.AnalogReadout;
+import guilibrary.widgets.controls.DigitalReadout;
+import guilibrary.widgets.controls.Label;
+import guilibrary.widgets.shape.Rectangle;
 
 public class WidgetLibraryController extends BaseController {
 

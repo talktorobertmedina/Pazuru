@@ -1,13 +1,10 @@
-package widgets.controls;
+package guilibrary.widgets.layouts;
 
 import org.w3c.dom.Document;
 
-import widgets.base.Component;
+import guilibrary.widgets.base.Component;
 
-/**
- * Digital readout class. Used to report digital sensor data.
- */
-public class DigitalReadout extends Labeled {
+public class GridLayout extends Layout {
 
 	@Override
 	public Document toFxml(Component component) {

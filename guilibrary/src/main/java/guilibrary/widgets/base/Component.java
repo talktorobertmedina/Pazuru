@@ -1,4 +1,4 @@
-package widgets.base;
+package guilibrary.widgets.base;
 
 /**
  * The base class for all elements inside of a screenbuilder.

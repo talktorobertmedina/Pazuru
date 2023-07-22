@@ -1,13 +1,13 @@
-package widgets.controls;
+package guilibrary.widgets.controls;
 
 import org.w3c.dom.Document;
 
-import widgets.base.Component;
+import guilibrary.widgets.base.Component;
 
 /**
- * Analog label class. It reports data from an analog signal.
+ * Digital readout class. Used to report digital sensor data.
  */
-public class AnalogReadout extends Labeled {
+public class DigitalReadout extends Labeled {
 
 	@Override
 	public Document toFxml(Component component) {
