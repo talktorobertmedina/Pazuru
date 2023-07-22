@@ -1,5 +1,23 @@
+### Project specific
 # Ignore artifacts
 bin/
 
 # Ignore all log files
 *.log
+
+### Gradle Specific
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+### Eclipse Specific
+# Eclipse Project
+.project
+
+# Eclipse Classpath
+.classpath
+
+# Eclipse Settings
+.settings

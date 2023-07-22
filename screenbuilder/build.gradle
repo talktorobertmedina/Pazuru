@@ -1,0 +1,24 @@
+plugins {
+    id 'eclipse'
+	id 'org.openjfx.javafxplugin' version '0.0.14'
+    id 'pazuru.java-application-conventions'
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-text'
+    implementation project(':guilibrary')
+}
+
+javafx {
+	sdk = System.getenv("JAVAFX_HOME")
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+java {
+    modularity.inferModulePath.set(true)
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'app.App'
+}
