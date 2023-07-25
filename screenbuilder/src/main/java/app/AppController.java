@@ -16,18 +16,18 @@ public class AppController extends BaseController {
 
 	@FXML
 	private BorderPane sp;
-	@FXML
-	private Panel leftPanel;
-	@FXML
-	private Panel centerPanel;
-	@FXML
-	private Panel rightPanel;
-	@FXML
-	private Panel bottomPanel;
+//	@FXML
+//	private Panel leftPanel;
+//	@FXML
+//	private Panel centerPanel;
+//	@FXML
+//	private Panel rightPanel;
+//	@FXML
+//	private Panel bottomPanel;
 
-	private MenuBarController mbc = new MenuBarController();
-	private ToolBarController tbc = new ToolBarController();
-	private WidgetLibraryController wlc = new WidgetLibraryController();
+//	private MenuBarController mbc = new MenuBarController();
+//	private ToolBarController tbc = new ToolBarController();
+//	private WidgetLibraryController wlc = new WidgetLibraryController();
 
 	public AppController() {
 		super(AppController.class.getResource(FxmlEnumList.APP_FXML));
@@ -39,7 +39,7 @@ public class AppController extends BaseController {
 
 	@FXML
 	private void initialize() {
-		VBox topbar = initializeTopBar();
+//		VBox topbar = initializeTopBar();
 //		initializeLeftPanel();
 		
 //		sp.setTop(topbar); // menubar, toolbar
@@ -53,12 +53,13 @@ public class AppController extends BaseController {
 	}
 	
 	private VBox initializeTopBar() {
-		return new VBox(mbc.getMyRoot(), tbc.getMyRoot());
+		return null;
+//		return new VBox(mbc.getMyRoot(), tbc.getMyRoot());
 	}
 	
 	private void initializeLeftPanel() {
-		wlc.generateRoot();
-		Tab root = wlc.getTab();
-		leftPanel.addTab(root);
+//		wlc.generateRoot();
+//		Tab root = wlc.getTab();
+//		leftPanel.addTab(root);
 	}
 }

@@ -16,6 +16,6 @@ module screenbuilder {
 	requires javafx.base;
 	requires javafx.controls;
 	requires javafx.fxml;
-	requires javafx.graphics;
-	requires guilibrary;
+	requires transitive javafx.graphics;
+	requires transitive guilibrary;
 }
