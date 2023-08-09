@@ -1,0 +1,52 @@
+plugins {
+    id 'eclipse'
+    id 'java'
+    id 'org.javamodularity.moduleplugin' version "1.8.12"
+    id 'org.beryx.jlink' version '2.25.0'
+	id 'org.openjfx.javafxplugin' version '0.0.14'
+    id 'pazuru.java-application-conventions'
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+dependencies {
+    implementation 'org.apache.commons:commons-text'
+    implementation project(':guilibrary')
+}
+
+eclipse.project {
+    natures 'org.eclipse.buildship.core.gradleprojectnature'
+    referencedProjects 'guilibrary'
+}
+
+eclipse.classpath.file {
+    whenMerged {
+        entries.findAll { isModule(it) || isGuiSource(it) }.each { it.entryAttributes['module'] = 'true' }
+    }
+}
+
+boolean isModule(entry) {
+    // filter java 9 modules
+    entry.kind == 'lib'  // Only libraries can be modules
+}
+
+boolean isGuiSource(entry) {
+    // TODO: add a more eligant solution to adding project depenencies into modulepath
+    entry.path == '/guilibrary'
+}
+
+java {
+    modularity.inferModulePath.set(true)
+}
+
+javafx {
+	sdk = System.getenv("JAVAFX_HOME")
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+application {
+    // Define the main class for the application.
+    mainModule = 'screenbuilder'
+    mainClass = 'app.App'
+}
